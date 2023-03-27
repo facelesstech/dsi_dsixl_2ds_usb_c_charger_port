@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name dsixl_usb_c-rescue)(type Legacy)(uri ${KIPRJMOD}/dsixl_usb_c-rescue.lib)(options "")(descr ""))
+)

@@ -1,0 +1,67 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# battery_custom_battery_custom
+#
+DEF battery_custom_battery_custom U 0 40 Y Y 1 F N
+F0 "U" 150 150 50 V V C CNN
+F1 "battery_custom_battery_custom" -200 150 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 0 100 250 0 1 0 N
+X GND 1 -50 -100 100 U 50 50 1 1 I
+X VCC 2 50 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# dsixl_usb_c-rescue_ds_charger_posts-ds_charger_posts
+#
+DEF dsixl_usb_c-rescue_ds_charger_posts-ds_charger_posts U 0 40 Y Y 1 F N
+F0 "U" 0 150 50 H V C CNN
+F1 "dsixl_usb_c-rescue_ds_charger_posts-ds_charger_posts" 0 250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+X left 1 -100 0 100 D 50 50 1 1 I
+X right 2 100 0 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# usb_c_6pin_usb_c_6pin
+#
+DEF usb_c_6pin_usb_c_6pin U 0 40 Y Y 1 F N
+F0 "U" -350 -150 50 V V C CNN
+F1 "usb_c_6pin_usb_c_6pin" 0 -450 50 H V C CNN
+F2 "" -50 100 50 H I C CNN
+F3 "" -50 100 50 H I C CNN
+DRAW
+S -300 0 300 -350 0 1 0 N
+X GND 1 -250 100 100 D 50 50 1 1 I
+X GND 1 250 100 100 D 50 50 1 1 I
+X SHIELD_GND 1 400 -300 100 L 50 50 1 1 I
+X VBUS 2 -150 100 100 D 50 50 1 1 I
+X VBUS 2 150 100 100 D 50 50 1 1 I
+X CC2 3 -50 100 100 D 50 50 1 1 I
+X CC1 4 50 100 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
